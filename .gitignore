@@ -103,3 +103,5 @@ docker-compose.override.*.yml
 *.sql
 !init_scripts/*.sql
 temp_*.sql
+
+.vercel
