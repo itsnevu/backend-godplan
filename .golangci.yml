@@ -1,0 +1,38 @@
+run:
+  timeout: 5m
+  modules-download-mode: mod
+  tests: true
+
+output:
+  format: colored-line-number
+  print-issued-lines: true
+  print-linter-name: true
+
+linters:
+  enable:
+    - errcheck
+    - gosimple
+    - govet
+    - ineffassign
+    - linters
+    - staticcheck
+    - typecheck
+    - unused
+    - gocritic
+    - gosec
+    - bodyclose
+    - nolintlint
+  disable-all: false
+
+linters-settings:
+  errorlint:
+    errorf: true
+    asserts: true
+    comparison: true
+
+issues:
+  exclude-rules:
+    - path: _test\.go
+      linters:
+        - gosec
+        - gocritic

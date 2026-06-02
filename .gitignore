@@ -13,6 +13,20 @@ vendor/
 *.so
 *.exe
 
+# Build artifacts & logs
+*.exe~
+*.dll
+build_log.txt
+build_error.txt
+build_error.log
+build_output.txt
+total_errors.txt
+api_logs.txt
+temp_migration.sql
+*.prof
+coverage.out
+coverage.html
+
 # ===============================
 # Environment variables / secrets
 # ===============================
